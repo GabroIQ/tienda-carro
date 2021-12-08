@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.articulos{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.articulo{
+  box-shadow: 1px 3px 1.5px rgba(0, 0, 0, .3);
+  text-align: center;
+
+}
+
+.btn{
+  margin-bottom: 20px;
+  border: none;
+  background-color: rgba(13, 24, 179, 0.3);
+  padding: 5px 20px;
+  border-radius: .5rem;
+  cursor: pointer;
+  letter-spacing: normal;
+  transition: 1s;
+}
+
+.btn:hover{
+  letter-spacing: 1px;
+}
+
+.layout{
+  display: flex;
+  align-items: center;
   flex-direction: column;
+}
+
+.titulo{
+  margin-bottom: 30px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  height: 60px;
+  padding: 0 50px;
+  box-shadow: 0 2px 3px rgb(0, 0, 0 , 0.2);
+  
+}
+
+.logo{
+  font-weight:800;
+  font-size: 2rem;
+}
+
+.carro{
+  background-color: royalblue;
+  color: whitesmoke;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.burbujaAlert{
+  position: relative;
+  background-color: rgba(236, 71, 11, 0.863);
+  padding: 1px 0.7rem;
+  border-radius: 15px;
+  top: 18px;
+  right: -15px;
+}
+
+.burbuja{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.detalles-carro{
+  background-color: white;
+  position: absolute;
+  margin-top: 30px;
+  box-shadow: 1px 5px 5px rgb(0, 0, 0 , 0.3);
+  border-radius: 5px;
+  width: 300px;
+  right: 50px;
+  top: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detalles-carro-info{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: solid 1px rgb(0, 0, 0 , 0.1);
 }
